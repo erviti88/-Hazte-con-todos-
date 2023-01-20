@@ -1,0 +1,113 @@
+html {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+pre,
+code {
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-color: #e5e5e5;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  text-shadow: 5px 5px 1px grey;
+}
+
+.card {
+  list-style: none;
+  padding: 30px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  box-shadow: 5px 5px 1px grey;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  display: inline-block;
+  font-weight: lighter;
+  color: rgb(102, 102, 102);
+  margin: 0.5em 0.5em;
+}
+
+.card-image {
+  height: 120px;
+}
+
+#pokedex {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.card:hover {
+  -webkit-animation: bounce 0.5s linear;
+          animation: bounce 0.5s linear;
+}
+
+@-webkit-keyframes bounce {
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}
+input, select {
+  padding: 0.5rem 1rem;
+  margin: 4px;
+  background-clip: padding-box;
+}
+
+.container__filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
